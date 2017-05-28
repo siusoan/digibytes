@@ -3,7 +3,7 @@ var path = require("path");
 var app = express();
 
 //data uit json files halen
-app.set('nieuwsFile', require('./config/nieuws.json'));
+app.set('nieuwsFile', require('./config/articles.json'));
 app.set('categorieenFile', require('./config/categorieen.json'));
 
 

@@ -6,9 +6,9 @@ nieuws.get('/items/:id', function(req, res) {
   var id = req.params.id;
   var teller = 0;
   var item = "";
-  while (teller < nieuwsFile.nieuws.length ) {
-    if (nieuwsFile.nieuws[teller].id == id) {
-      item = nieuwsFile.nieuws[teller];
+  while (teller < nieuwsFile.articles.length ) {
+    if (nieuwsFile.articles[teller].id == id) {
+      item = nieuwsFile.articles[teller];
     }
     teller++;
   }
